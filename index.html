@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="s.css">
+    <link rel="Icon" href="img/47271.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Princess+Sofia&family=Shadows+Into+Light+Two&display=swap');
+    </style>
+    <title> Horóscopo </title>
+</head>
+
+<body>
+    
+
+    <h1> Horóscopo </h1>
+
+    <div class="barra">
+        <input type="text" id="signos">
+        <button onclick="escolhaSigno()"> Buscar </button>
+    </div>
+
+    <div id="imagem">
+        <img src="https://media.tenor.com/h-JHDTdf7noAAAAi/night-stars.gif" alt="" width="500px" id="im1">
+    </div>
+
+    <div id="frase"></div>
+
+    <div class="mae">
+        <ul>
+
+            <li> <a href="https://capricho.abril.com.br/horoscopo/signo-aquario"><img src="img/signo-aquario.png"
+                        alt="" class="seila"></a> <span>Aquário</span> 21/03 - 19/04</li>
+
+            <li> <a href="https://capricho.abril.com.br/horoscopo/signo-aries"><img src="img/signo-aries.png"
+                        alt="" class="seila"></a> <span>Áries</span> 21/03 - 19/04</li>
+
+            <li><a href="https://capricho.abril.com.br/horoscopo/signo-cancer"> <img src="img/signo-cancer.png"
+                        alt="" class="seila"></a> <span>Câncer</span> 22/06 - 22/07 </li>
+
+            <li><a href="https://capricho.abril.com.br/horoscopo/signo-capricornio"> <img src="img/signo-capricornio.png" 
+                        alt="" class="seila"></a> <span>Capricórnio</span> 22/12 - 19/01</li>
+
+            <li><a href="https://capricho.abril.com.br/horoscopo/signo-escorpiao"> <img src="img/signo-escorpiao.png"
+                        alt="" class="seila"></a> <span>Escorpião</span> 23/10 - 21/11</li>
+
+            <li><a href="https://capricho.abril.com.br/horoscopo/signo-gemeos"> <img src="img/signo-gemeos.png"
+                        alt="" class="seila"></a> <span>Gêmeos</span> 21/05 - 21/06</li>
+
+            <li><a href="https://capricho.abril.com.br/horoscopo/signo-leao"> <img src="img/signo-leao.png"
+                        alt="" class="seila"></a><span>Leão</span> 23/07 - 22/08</li>
+
+            <li> <a href="https://capricho.abril.com.br/horoscopo/signo-libra"><img src="img/signo-libra.png"
+                        alt="" class="seila"></a> <span>Libra</span> 23/09 - 22/10</li>
+
+            <li> <a href="https://capricho.abril.com.br/horoscopo/signo-peixes"><img src="img/signo-peixes.png"
+                        alt="" class="seila"></a> <span>Peixes</span> 19/02 - 20/03</li>
+
+            <li><a href="https://capricho.abril.com.br/horoscopo/signo-touro"> <img src="img/signo-touro.png"
+                        alt="" class="seila"></a> <span>Touro</span>20/04 - 20/05</li>
+
+
+            <li> <a href="https://capricho.abril.com.br/horoscopo/signo-sagitario"><img src="img/signo-sagitario.png"
+                        alt="" class="seila"></a> <span>Sagitario</span>22/11 - 21/12 </li>
+
+            <li> <a href="https://capricho.abril.com.br/horoscopo/signo-virgem"><img src="img/signo-virgem.png"
+                        alt="" class="seila"></a> <span>Virgem</span> 23/08 - 22/09</li>
+
+        </ul>
+    </div>
+
+    <footer>
+        <small> Carolyne Schmidt | Acessa meu <a href="https://www.linkedin.com/in/carolyne-schmidt-65a291128/">
+                Linkedin </a> </small>
+    </footer>
+
+
+
+    <script>
+
+
+        function escolhaSigno() {
+            var imagem = document.getElementById("im1");
+            var texto
+            var signo = document.querySelector("#signos").value
+
+            switch (signo) {
+
+                case "Áries":
+                    texto = "Os mais estressadinho do zodíaco, os arianos são impulsivos, determinados e nada pacientes."
+                    imagem.src = "img/signo-aries.png";
+
+                    break;
+
+                case "Touro":
+                    texto = "Tão calmos e apegados, mas pisa no calo deles para ver o que acontece. Não vamos esquecer da fome sem fim que eles têm!"
+                    imagem.src = "img/signo-touro.png";
+
+                    break;
+
+                case "Gemeos":
+                    texto = "Donos da razão e falantes, com essa junção não dá nem para tentar discutir com eles."
+                    imagem.src = "img/signo-gemeos.png";
+
+                    break;
+
+                case "Cancer":
+                    texto = "Família é a palavra-chave para o canceriano. Tranquilo e emotivo, gosta de ficar em casa, fazer programas com quem ama e curtir momentos com os parentes. Curioso, faz amizade com facilidade, mas pode ser um pouco sensível."
+                    imagem.src = "img/signo-cancer.png";
+
+                    break;
+
+                case "Leão":
+                    texto = "Este é signo que veio para brilhar. O leonino gosta de chamar a atenção e ser o centro do mundo, mas também é muito amável e leal. Simpático e comunicativo, o nativo de leão pode ser um pouco ciumento e inseguro."
+                    imagem.src = "img/signo-leao.png";
+
+                    break;
+
+                case "Virgem":
+                    texto = "Perspicaz e inteligente, o virginiano está acostumado com o sucesso, por isso se cobra muito, assim como aos demais. Por isso, pode ser um pouco rígido e magoar quem ama. Tímido, prefere programas tranquilos a grandes eventos."
+                    imagem.src = "img/signo-virgem.png";
+
+                    break;
+
+                case "Libra":
+                    texto = "O libriano gosta do que é belo e harmonioso. Não gosta de conflitos e por isso tenta ser imparcial em debates e brigas. Indeciso, pode demorar muito para escolher coisas simples, como o que comer ou vestir. Bom gosto define este signo."
+                    imagem.src = "img/signo-libra.png";
+
+                    break;
+
+                case "Escorpião":
+                    texto = "Determinado, o escorpiano vai até o fim para conquistar os seus objetivos. Sensual e romântico, gosta de estar em relacionamentos, mas pode ser desconfiado enquanto não se sentir seguro com a pessoa."
+                    imagem.src = "img/signo-escorpiao.png";
+
+                    break;
+
+                case "Sagitario":
+                    texto = "Um signo de bem com a vida, que está sempre em busca de ação e que vive rodeado de amigos. Este é o signo de sagitário, que é sonhador e adora conhecer pessoas e lugares novos."
+                    imagem.src = "img/signo-sagitario.png";
+
+                    break;
+
+
+                case "Capricornio":
+                    texto = "Trabalhador, tímido e educado, o capricórnio pode passar uma imagem de fechado e até mesmo antipático, mas é que ele eprecisa confiar em quem está ao seu lado para se abrir totalmente. Com paciência, ele se mostra um amigo leal e um companheiro fiel."
+                    imagem.src = "img/signo-capricornio.png";
+
+                    break;
+
+                case "Aquario":
+                    texto = "Independente, o aquariano preza muito por sua liberdade. Gosta de viajar, sair e conhecer pessoas novas. Tem uma mente aberta e gosta de tudo o que é inovador e moderno, desde roupas e tecnologia, até mesmo atitudes comportamentais."
+                    imagem.src = "img/signo-aquario.png";
+
+                    break;
+
+                case "Peixes":
+                    texto = "Este é o signo mais romântico do zodíaco. Sonhador e carinhoso, ele está sempre preocupado com o bem estar dos outros. Sensível e carinhoso, acredita em contos de fadas e acha que todos merecem um final feliz."
+                    imagem.src = "img/signo-peixes.png";
+
+                    break;
+
+                default: texto = "Insira um signo existente"
+            }
+
+            document.getElementById("frase").innerHTML = texto
+
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+body {
+
+    padding: 0;
+    margin: 0;
+    background-image: url(img/cloud.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+
+
+}
+
+h1 {
+    /*background:linear-gradient( rgb(233, 28, 223) 0%, rgba(225, 31, 215, 0.477) 20%, rgba(225, 31, 215, 0.001) 50%) ;*/
+    text-align: center;
+    font-family: 'Fleur De Leah', cursive;
+    font-size: 90px;
+    letter-spacing: 5px;
+    color: white;
+}
+
+button {
+
+
+    background-color: rgba(239, 114, 83, 0.558);
+    border-radius: 20px;
+    border: solid 1px rgb(0, 0, 0);
+    box-shadow: 10px 10px 10px;
+    width: 90px;
+    font-size: 20px;
+    margin-left: 10px;
+    font-family: 'Shadows Into Light Two', cursive;
+
+
+}
+
+input {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: solid 1px black;
+    box-shadow: 10px 10px 10px;
+    width: 30rem;
+    height: 70px;
+    font-size: 20px;
+    font-family: 'Shadows Into Light Two', cursive;
+
+
+}
+
+.barra {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    text-align: center;
+
+}
+
+
+#frase {
+    margin: 20px;
+    border-radius: 70px;
+    box-shadow: 10px 10px 20px;
+    background-color: rgba(221, 158, 244, 0.609);
+    font-size: 40px;
+    margin-top: 40px;
+    font-family: 'Shadows Into Light Two', cursive;
+    text-align: center;
+
+}
+
+
+#imagem{
+    margin-top: 20px;
+    margin-left: 45rem;
+  
+   
+}
+ .seila{
+    width: 15rem;
+    height: 15rem;
+    background-color: rgba(34, 28, 34, 0.558);
+    border-radius: 50%;
+   
+ }
+
+
+ul {
+    /*background-color: rgba(255, 255, 255, 0.64);*/
+    display: grid;
+    grid-template-columns: 27rem 27rem 27rem 27rem;
+
+
+
+}
+
+li {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Shadows Into Light Two', cursive;
+    font-style: italic;
+
+
+
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    bottom: 0vh;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-image: url(img/ceu.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-size: 30px;
+    font-family: 'Princess Sofia', cursive;
+
+}
+
+a {
+
+    font-size: 30px;
+    font-family: 'Princess Sofia', cursive;
+    color: rgba(183, 127, 181, 0.644);
+
+}
